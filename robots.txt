@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://silverbowl.co.ke/sitemap.xml
+
+# Block admin-type paths (none exist, but future-proofing)
+Disallow: /admin/
+Disallow: /private/
