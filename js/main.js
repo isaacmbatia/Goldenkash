@@ -140,4 +140,21 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     }
+    /* ── Social Share Links ─────────────────────────────────── */
+    document.querySelectorAll('.share-tw').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const url = encodeURIComponent(window.location.href);
+            const text = encodeURIComponent(document.title);
+            window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank', 'width=600,height=400');
+        });
+    });
+
+    document.querySelectorAll('.share-wa').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            const text = encodeURIComponent(document.title + ' ' + window.location.href);
+            window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank', 'width=600,height=400');
+        });
+    });
 });
