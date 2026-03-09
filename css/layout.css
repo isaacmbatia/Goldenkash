@@ -1,6 +1,17 @@
 /* Silverbowl – Header & Footer */
 
-/* ── Site Header ────────────────────────────────────────────── */
+@keyframes headerSlideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .site-header {
     position: sticky;
     top: 0;
@@ -9,6 +20,7 @@
     backdrop-filter: blur(12px);
     border-bottom: 1px solid transparent;
     transition: border-color var(--transition), box-shadow var(--transition);
+    animation: headerSlideDown 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .site-header.scrolled {
@@ -36,8 +48,27 @@
     line-height: 1;
 }
 
+@keyframes goldShine {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .site-logo span {
-    color: var(--color-primary);
+    background: linear-gradient(90deg, #f5a623, #ffca28, #f5a623);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: goldShine 3s linear infinite;
 }
 
 /* Nav */
