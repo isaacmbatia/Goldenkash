@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://silverbowl.co.ke/sitemap.xml
+Sitemap: https://goldenkash.com/sitemap.xml
 
 # Block admin-type paths (none exist, but future-proofing)
 Disallow: /admin/
