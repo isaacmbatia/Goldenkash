@@ -4,160 +4,220 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resources – Best Tools for Making Money Online | GoldenKash</title>
+    <title>Resources Hub – Expert Guides & Tools | GoldenKash</title>
     <meta name="description"
-        content="Curated tools, platforms, and resources for earning online — vetted by the GoldenKash team. Free and paid options across every income category." />
+        content="The central hub for all GoldenKash resources. Explore expert guides on Social Media, Crypto, Forex, AI Tools, and more to build your online income." />
     <link rel="canonical" href="https://goldenkash.com/resources.html" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/blog.css" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EV0HH4Y5C9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <style>
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 2.5rem;
+            margin: 4rem 0;
+        }
 
-  gtag('config', 'G-EV0HH4Y5C9');
-</script>
-<!-- Google AdSense -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-1294582602291166" crossorigin="anonymous"></script>
+        .resource-card {
+            background: white;
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-lg);
+            padding: 3rem 2.5rem;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .resource-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--color-primary);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .resource-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--color-primary-l);
+        }
+
+        .resource-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .resource-icon {
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+            background: var(--color-bg);
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .resource-card:hover .resource-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .resource-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            color: var(--color-text-1);
+        }
+
+        .resource-card p {
+            color: var(--color-text-2);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .resource-btn {
+            margin-top: auto;
+            font-weight: 700;
+            color: var(--color-primary);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .resource-card:hover .resource-btn {
+            color: var(--color-primary-d);
+        }
+
+        @media (max-width: 768px) {
+            .resource-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EV0HH4Y5C9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-EV0HH4Y5C9');
+    </script>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-1294582602291166" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="site-header" id="site-header">
-        <div class="header-inner"><a href="index.html" class="site-logo">Golden<span>Kash</span></a><button
-                class="nav-toggle" aria-label="Toggle navigation"
-                aria-expanded="false"><span></span><span></span><span></span></button>
+        <div class="header-inner">
+            <a href="index.html" class="site-logo">Golden<span>Kash</span></a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="index.html">Home</a></li>
-                
                 <li><a href="blog/index.html?cat=socials">Social Media</a></li>
                 <li><a href="blog/index.html?cat=crypto">Crypto</a></li>
                 <li><a href="blog/index.html?cat=forex">Forex & Stocks</a></li>
                 <li><a href="blog/index.html?cat=makemoney">Make Money</a></li>
-                <li><a href="blog/index.html?cat=tools">Tools</a></li>
+                <li><a href="resources.html">Resources</a></li>
                 <li><a href="blog/index.html?cat=techai">Tech &amp; AI</a></li>
             </ul>
         </div>
     </header>
-    <section
-        style="background:linear-gradient(135deg,#f0faf5 0%,#e8f4fd 100%);padding:5rem 0 4rem;border-bottom:1px solid var(--color-border);text-align:center">
-        <div class="container"><span class="section-label">Curated</span>
-            <h1>Best Resources for Making Money Online</h1>
-            <p style="max-width:580px;margin:0 auto;color:var(--color-text-2)">Every tool and platform below has been
-                vetted. We only recommend what we'd use ourselves. Some links are affiliate links — marked with ✦.</p>
+
+    <section class="blog-hero" style="background: linear-gradient(135deg, #f8f9fc 0%, #eef2f7 100%); padding: 6rem 0;">
+        <div class="container text-center">
+            <span class="section-label">Central Hub</span>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem;">Golden<span>Kash</span> Resources</h1>
+            <p style="max-width: 800px; margin: 0 auto; font-size: 1.25rem; color: var(--color-text-2);">
+                Your gateway to financial freedom. We've organized our best guides, tools, and strategies 
+                into six core pillars to help you find your path to online success.
+            </p>
         </div>
     </section>
-    <section class="section">
-        <div class="container" style="max-width:1000px">
 
-            <div style="margin-bottom:4rem">
-                <span class="section-label">Freelancing</span>
-                <h2 style="margin-bottom:1.5rem">Freelancing Platforms</h2>
-                <div class="grid grid-3" style="gap:1.25rem">
-                    <div
-                        style="background:white;border:1px solid var(--color-border);border-radius:var(--radius-md);padding:1.5rem;box-shadow:var(--shadow-sm)">
-                        <h4>Fiverr ✦</h4>
-                        <p style="font-size:.85rem;color:var(--color-text-2)">Best platform for beginners. Free to join.
-                            Start earning within days.</p>
-                        <a href="https://www.fiverr.com" target="_blank" rel="noopener"
-                            class="btn btn-primary btn-sm">Start on Fiverr →</a>
-                    </div>
-                    <div
-                        style="background:white;border:1px solid var(--color-border);border-radius:var(--radius-md);padding:1.5rem;box-shadow:var(--shadow-sm)">
-                        <h4>Upwork</h4>
-                        <p style="font-size:.85rem;color:var(--color-text-2)">Higher-paying clients. Best for
-                            experienced freelancers and professionals.</p>
-                        <a href="https://www.upwork.com" target="_blank" rel="noopener"
-                            class="btn btn-primary btn-sm">Join Upwork →</a>
-                    </div>
-                    <div
-                        style="background:white;border:1px solid var(--color-border);border-radius:var(--radius-md);padding:1.5rem;box-shadow:var(--shadow-sm)">
-                        <h4>PeoplePerHour</h4>
-                        <p style="font-size:.85rem;color:var(--color-text-2)">UK-focused but global. Good for writing,
-                            design, and tech services.</p>
-                        <a href="https://www.peopleperhour.com" target="_blank" rel="noopener"
-                            class="btn btn-primary btn-sm">Join PPH →</a>
-                    </div>
-                </div>
-            </div>
+    <div class="container">
+        <div class="resource-grid">
+            <!-- Social Media -->
+            <a href="blog/index.html?cat=socials" class="resource-card">
+                <div class="resource-icon">📱</div>
+                <h3>Social Media</h3>
+                <p>Master YouTube automation, TikTok growth, and Instagram monetization. Built for the modern creator economy.</p>
+                <div class="resource-btn">Explore Guides →</div>
+            </a>
 
-            <div style="margin-bottom:4rem">
-                <span class="section-label">E-Commerce</span>
-                <h2 style="margin-bottom:1.5rem">Online Selling Platforms</h2>
-                <div class="grid grid-3" style="gap:1.25rem">
-                    <div
-                        style="background:white;border:1px solid var(--color-border);border-radius:var(--radius-md);padding:1.5rem;box-shadow:var(--shadow-sm)">
-                        <h4>Shopify ✦</h4>
-                        <p style="font-size:.85rem;color:var(--color-text-2)">The #1 e-commerce platform. Start a
-                            dropshipping or print-on-demand store.</p>
-                        <a href="https://www.shopify.com" target="_blank" rel="noopener"
-                            class="btn btn-primary btn-sm">Try Shopify →</a>
-                    </div>
-                    <div
-                        style="background:white;border:1px solid var(--color-border);border-radius:var(--radius-md);padding:1.5rem;box-shadow:var(--shadow-sm)">
-                        <h4>Etsy</h4>
-                        <p style="font-size:.85rem;color:var(--color-text-2)">Sell handmade, vintage, or digital
-                            products to millions of buyers.</p>
-                        <a href="https://www.etsy.com/sell" target="_blank" rel="noopener"
-                            class="btn btn-primary btn-sm">Sell on Etsy →</a>
-                    </div>
-                    <div
-                        style="background:white;border:1px solid var(--color-border);border-radius:var(--radius-md);padding:1.5rem;box-shadow:var(--shadow-sm)">
-                        <h4>Gumroad</h4>
-                        <p style="font-size:.85rem;color:var(--color-text-2)">Best for digital products. Easy setup,
-                            simple payment, global reach.</p>
-                        <a href="https://www.gumroad.com" target="_blank" rel="noopener"
-                            class="btn btn-primary btn-sm">Start on Gumroad →</a>
-                    </div>
-                </div>
-            </div>
+            <!-- Crypto -->
+            <a href="blog/index.html?cat=crypto" class="resource-card">
+                <div class="resource-icon">₿</div>
+                <h3>Crypto</h3>
+                <p>From Bitcoin basics to advanced DeFi strategies. Learn how to navigate the digital asset landscape safely.</p>
+                <div class="resource-btn">Explore Guides →</div>
+            </a>
 
-            <div style="margin-bottom:4rem">
-                <span class="section-label">Content Tools</span>
-                <h2 style="margin-bottom:1.5rem">Content Creation Tools</h2>
-                <div class="grid grid-3" style="gap:1.25rem">
-                    <div
-                        style="background:white;border:1px solid var(--color-border);border-radius:var(--radius-md);padding:1.5rem;box-shadow:var(--shadow-sm)">
-                        <h4>Canva (Free)</h4>
-                        <p style="font-size:.85rem;color:var(--color-text-2)">Design thumbnails, social graphics, and
-                            digital products beautifully.</p>
-                        <a href="https://www.canva.com" target="_blank" rel="noopener"
-                            class="btn btn-primary btn-sm">Use Canva →</a>
-                    </div>
-                    <div
-                        style="background:white;border:1px solid var(--color-border);border-radius:var(--radius-md);padding:1.5rem;box-shadow:var(--shadow-sm)">
-                        <h4>CapCut (Free)</h4>
-                        <p style="font-size:.85rem;color:var(--color-text-2)">Best free video editor for TikTok, Reels,
-                            and YouTube Shorts.</p>
-                        <a href="https://www.capcut.com" target="_blank" rel="noopener"
-                            class="btn btn-primary btn-sm">Download CapCut →</a>
-                    </div>
-                    <div
-                        style="background:white;border:1px solid var(--color-border);border-radius:var(--radius-md);padding:1.5rem;box-shadow:var(--shadow-sm)">
-                        <h4>TubeBuddy ✦</h4>
-                        <p style="font-size:.85rem;color:var(--color-text-2)">YouTube keyword research, A/B testing, and
-                            channel optimisation.</p>
-                        <a href="https://www.tubebuddy.com" target="_blank" rel="noopener"
-                            class="btn btn-primary btn-sm">Try TubeBuddy →</a>
-                    </div>
-                </div>
-            </div>
+            <!-- Forex & Stocks -->
+            <a href="blog/index.html?cat=forex" class="resource-card">
+                <div class="resource-icon">📈</div>
+                <h3>Forex & Stocks</h3>
+                <p>Proven trading systems and long-term investment principles. Build wealth through the global financial markets.</p>
+                <div class="resource-btn">Explore Guides →</div>
+            </a>
 
-            <div
-                style="background:var(--color-primary);border-radius:var(--radius-xl);padding:2.5rem;text-align:center">
-                <h2 style="color:white;margin-bottom:.75rem">Want Personalised Recommendations?</h2>
-                <p style="color:rgba(255,255,255,.8);margin-bottom:1.5rem">Tell us your situation and we'll point you to
-                    the right tools.</p>
-                <a href="contact.html" class="btn"
-                    style="background:white;color:var(--color-primary);font-weight:700">Contact Us →</a>
+            <!-- Make Money -->
+            <a href="blog/index.html?cat=makemoney" class="resource-card">
+                <div class="resource-icon">💰</div>
+                <h3>Make Money</h3>
+                <p>Step-by-step blueprints for side hustles, freelance agencies, and passive income streams that actually work.</p>
+                <div class="resource-btn">Explore Guides →</div>
+            </a>
+
+            <!-- Tools -->
+            <a href="resource.html" class="resource-card">
+                <div class="resource-icon">🛠️</div>
+                <h3>Tools</h3>
+                <p>Our hand-picked list of the 50 most searched tools for making money online. Vetted with expert pro-tips.</p>
+                <div class="resource-btn">View Tool List →</div>
+            </a>
+
+            <!-- Tech & AI -->
+            <a href="blog/index.html?cat=techai" class="resource-card">
+                <div class="resource-icon">🤖</div>
+                <h3>Tech & AI</h3>
+                <p>Stay ahead of the curve with AI automation, prompt engineering, and the latest tech breakthroughs.</p>
+                <div class="resource-btn">Explore Guides →</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Final CTA -->
+    <section class="section" style="background: var(--color-bg); padding: 5rem 0;">
+        <div class="container">
+            <div style="background: white; padding: 4rem; border-radius: var(--radius-lg); border: 1px solid var(--color-border); text-align: center; box-shadow: var(--shadow-sm);">
+                <h2 style="font-size: 2.2rem; margin-bottom: 1.5rem;">Ready to Start Your Journey?</h2>
+                <p style="font-size: 1.1rem; color: var(--color-text-2); margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Download the Ultimate Online Income Starter Kit and join 50,000+ readers building their digital future today.
+                </p>
+                <a href="start-here.html" class="btn btn-primary btn-lg">Begin Your Journey →</a>
             </div>
         </div>
     </section>
+
     <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
@@ -169,29 +229,29 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="blog/index.html">Blog</a></li>
+                        <li><a href="resources.html">Resources</a></li>
                         <li><a href="about.html">About</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Top Guides</h4>
+                    <h4>Legal</h4>
                     <ul>
-                        <li><a href="blog/affiliate-marketing-beginners.html">Affiliate Marketing</a></li>
-                        <li><a href="blog/youtube-channel-money.html">YouTube</a></li>
+                        <li><a href="privacy-policy.html">Privacy</a></li>
+                        <li><a href="disclaimer.html">Disclaimer</a></li>
+                        <li><a href="terms.html">Terms</a></li>
                     </ul>
                 </div>
                 <div class="footer-newsletter">
                     <h4>Newsletter</h4>
+                    <p>Weekly tips — free.</p>
                     <form class="newsletter-form inline-form"><input type="email" placeholder="Email" /><button
                             class="btn btn-primary btn-sm">Join</button></form>
                 </div>
             </div>
-            <div class="footer-bottom"><span>© 2026 GoldenKash</span>
-                <div class="footer-bottom-links"><a href="privacy-policy.html">Privacy</a><a
-                        href="disclaimer.html">Disclaimer</a><a href="terms.html">Terms</a></div>
-            </div>
+            <div class="footer-bottom"><span>© 2026 GoldenKash</span></div>
         </div>
     </footer>
-    <div id="back-top">↑</div>
+
     <script src="js/main.js"></script>
 </body>
 
